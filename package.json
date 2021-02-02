@@ -1,0 +1,23 @@
+{
+  "name": "figma-to-wc",
+  "version": "0.0.1",
+  "description": "Generate webcomponents via the Figma API",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"yarn run compile\"",
+    "compile": "tsc && node ./dist/index.js"
+  },
+  "author": "Gregg Shanefelt",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/bell": "^12.1.1",
+    "@hapi/hapi": "^20.1.0"
+  },
+  "devDependencies": {
+    "@types/hapi__bell": "^11.0.2",
+    "@types/hapi__hapi": "^20.0.5",
+    "@types/node": "^14.14.22",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.1.3"
+  }
+}
